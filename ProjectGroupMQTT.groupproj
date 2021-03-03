@@ -1,0 +1,192 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{D929CEEB-9B3B-4D87-BA81-D725153E18C9}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ProjectMQTT.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\Componentes\delphi-mqtt\Demo\Server2.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\Componentes\DOSCommand2\Demo\DemoListWindowsDir.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\MQTTX\BROKER\ProjectBrokerMQTT.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\Demos\Object Pascal\VCL\CardPanel\CardPanel.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\Frameworks\ORM-Basico-Delphi\GerarClasse\ProjGerarClasse.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\Componentes\delphi-mqtt\src\MQTTComponents_10.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsDXeRun.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsD103Design.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsD103Run.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsD102Run.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsD102Design.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsDXeDesign_10.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsDXeRun_10.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ProjectMQTT">
+        <MSBuild Projects="ProjectMQTT.dproj"/>
+    </Target>
+    <Target Name="ProjectMQTT:Clean">
+        <MSBuild Projects="ProjectMQTT.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProjectMQTT:Make">
+        <MSBuild Projects="ProjectMQTT.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Server2">
+        <MSBuild Projects="..\..\Componentes\delphi-mqtt\Demo\Server2.dproj"/>
+    </Target>
+    <Target Name="Server2:Clean">
+        <MSBuild Projects="..\..\Componentes\delphi-mqtt\Demo\Server2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Server2:Make">
+        <MSBuild Projects="..\..\Componentes\delphi-mqtt\Demo\Server2.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DemoListWindowsDir">
+        <MSBuild Projects="..\..\Componentes\DOSCommand2\Demo\DemoListWindowsDir.dproj"/>
+    </Target>
+    <Target Name="DemoListWindowsDir:Clean">
+        <MSBuild Projects="..\..\Componentes\DOSCommand2\Demo\DemoListWindowsDir.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DemoListWindowsDir:Make">
+        <MSBuild Projects="..\..\Componentes\DOSCommand2\Demo\DemoListWindowsDir.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ProjectBrokerMQTT">
+        <MSBuild Projects="..\MQTTX\BROKER\ProjectBrokerMQTT.dproj"/>
+    </Target>
+    <Target Name="ProjectBrokerMQTT:Clean">
+        <MSBuild Projects="..\MQTTX\BROKER\ProjectBrokerMQTT.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProjectBrokerMQTT:Make">
+        <MSBuild Projects="..\MQTTX\BROKER\ProjectBrokerMQTT.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CardPanel">
+        <MSBuild Projects="..\..\Demos\Object Pascal\VCL\CardPanel\CardPanel.dproj"/>
+    </Target>
+    <Target Name="CardPanel:Clean">
+        <MSBuild Projects="..\..\Demos\Object Pascal\VCL\CardPanel\CardPanel.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CardPanel:Make">
+        <MSBuild Projects="..\..\Demos\Object Pascal\VCL\CardPanel\CardPanel.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ProjGerarClasse">
+        <MSBuild Projects="..\..\Frameworks\ORM-Basico-Delphi\GerarClasse\ProjGerarClasse.dproj"/>
+    </Target>
+    <Target Name="ProjGerarClasse:Clean">
+        <MSBuild Projects="..\..\Frameworks\ORM-Basico-Delphi\GerarClasse\ProjGerarClasse.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProjGerarClasse:Make">
+        <MSBuild Projects="..\..\Frameworks\ORM-Basico-Delphi\GerarClasse\ProjGerarClasse.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MQTTComponents_10">
+        <MSBuild Projects="..\..\Componentes\delphi-mqtt\src\MQTTComponents_10.dproj"/>
+    </Target>
+    <Target Name="MQTTComponents_10:Clean">
+        <MSBuild Projects="..\..\Componentes\delphi-mqtt\src\MQTTComponents_10.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MQTTComponents_10:Make">
+        <MSBuild Projects="..\..\Componentes\delphi-mqtt\src\MQTTComponents_10.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="OverbyteIcsDXeRun">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsDXeRun.dproj"/>
+    </Target>
+    <Target Name="OverbyteIcsDXeRun:Clean">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsDXeRun.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="OverbyteIcsDXeRun:Make">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsDXeRun.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="OverbyteIcsD103Design">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsD103Design.dproj"/>
+    </Target>
+    <Target Name="OverbyteIcsD103Design:Clean">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsD103Design.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="OverbyteIcsD103Design:Make">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsD103Design.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="OverbyteIcsD103Run">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsD103Run.dproj"/>
+    </Target>
+    <Target Name="OverbyteIcsD103Run:Clean">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsD103Run.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="OverbyteIcsD103Run:Make">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsD103Run.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="OverbyteIcsD102Run">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsD102Run.dproj"/>
+    </Target>
+    <Target Name="OverbyteIcsD102Run:Clean">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsD102Run.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="OverbyteIcsD102Run:Make">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsD102Run.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="OverbyteIcsD102Design">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsD102Design.dproj"/>
+    </Target>
+    <Target Name="OverbyteIcsD102Design:Clean">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsD102Design.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="OverbyteIcsD102Design:Make">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsD102Design.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="OverbyteIcsDXeDesign_10">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsDXeDesign_10.dproj"/>
+    </Target>
+    <Target Name="OverbyteIcsDXeDesign_10:Clean">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsDXeDesign_10.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="OverbyteIcsDXeDesign_10:Make">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsDXeDesign_10.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="OverbyteIcsDXeRun_10">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsDXeRun_10.dproj"/>
+    </Target>
+    <Target Name="OverbyteIcsDXeRun_10:Clean">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsDXeRun_10.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="OverbyteIcsDXeRun_10:Make">
+        <MSBuild Projects="..\..\Componentes\OverbyteICS\Packages\OverbyteIcsDXeRun_10.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ProjectMQTT;Server2;DemoListWindowsDir;ProjectBrokerMQTT;CardPanel;ProjGerarClasse;MQTTComponents_10;OverbyteIcsDXeRun;OverbyteIcsD103Design;OverbyteIcsD103Run;OverbyteIcsD102Run;OverbyteIcsD102Design;OverbyteIcsDXeDesign_10;OverbyteIcsDXeRun_10"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ProjectMQTT:Clean;Server2:Clean;DemoListWindowsDir:Clean;ProjectBrokerMQTT:Clean;CardPanel:Clean;ProjGerarClasse:Clean;MQTTComponents_10:Clean;OverbyteIcsDXeRun:Clean;OverbyteIcsD103Design:Clean;OverbyteIcsD103Run:Clean;OverbyteIcsD102Run:Clean;OverbyteIcsD102Design:Clean;OverbyteIcsDXeDesign_10:Clean;OverbyteIcsDXeRun_10:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ProjectMQTT:Make;Server2:Make;DemoListWindowsDir:Make;ProjectBrokerMQTT:Make;CardPanel:Make;ProjGerarClasse:Make;MQTTComponents_10:Make;OverbyteIcsDXeRun:Make;OverbyteIcsD103Design:Make;OverbyteIcsD103Run:Make;OverbyteIcsD102Run:Make;OverbyteIcsD102Design:Make;OverbyteIcsDXeDesign_10:Make;OverbyteIcsDXeRun_10:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
